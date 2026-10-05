@@ -1,0 +1,71 @@
+name: Finalize approved JPTC maps
+
+on:
+  push:
+    paths:
+      - 'img/adventure/JPTC/final_room.jpg'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update 5eTools image references and clean temporary map files
+        run: |
+          python <<'PY'
+          import json
+          import time
+          from pathlib import Path
+
+          names = {
+              'Base Library Room': 'base_library_room.jpg',
+              'Book Mimic Room': 'book_mimic_room.jpg',
+              'Book Puzzle Room': 'book_puzzle_room.jpg',
+              'Reinforced Door Room': 'reinforced_door_room.jpg',
+              'Librarian Room': 'librarian_room.jpg',
+              'Teamwork Room': 'teamwork_room.jpg',
+              'Mirror Gallery': 'mirror_gallery.jpg',
+              'Final Room': 'final_room.jpg',
+          }
+
+          p = Path('Josric_Pickle_Practical_Course_for_Adventurers_5etools.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          data['_meta']['dateLastModified'] = int(time.time())
+
+          def walk(obj):
+              if isinstance(obj, dict):
+                  if obj.get('type') == 'image' and obj.get('title') in names:
+                      obj['href'] = {
+                          'type': 'internal',
+                          'path': f"adventure/JPTC/{names[obj['title']]}"
+                      }
+                  for value in obj.values():
+                      walk(value)
+              elif isinstance(obj, list):
+                  for value in obj:
+                      walk(value)
+
+          walk(data)
+          p.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+
+          r = Path('README.md')
+          text = r.read_text(encoding='utf-8')
+          marker = '## Approved map set'
+          if marker in text:
+              text = text.split(marker)[0].rstrip()
+          text += '''\n\n## Approved map set\n\nThe adventure uses the approved raster map set packaged in `img/adventure/JPTC/`, following the same internal-image pattern used by No Cause for Alarm. The 5eTools JSON references these as internal paths such as `adventure/JPTC/book_mimic_room.jpg`. The earlier SVG recreations are no longer used.\n'''
+          r.write_text(text, encoding='utf-8')
+          PY
+
+          rm -rf maps
+          rm -rf .approved-map-upload
+          rm -f .github/workflows/install-approved-maps.yml
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Package approved maps like NCFA"
+          git push
