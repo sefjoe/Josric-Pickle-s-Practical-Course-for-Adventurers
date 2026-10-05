@@ -23,10 +23,22 @@ The JSON references the maps in this repository through raw GitHub URLs, so the 
 
 ## Current version
 
-**v1.4**
+**v1.5**
 
 This version includes the corrected lesson-marker phrase, optional Librarian and Teamwork pacing rooms, initiative-ready Mirror Echoes and Josric Reflections, Josric's 2024 Mage-based final encounter, exact table-terrain setup notes, expanded Josric appearance/voice guidance, and the first-person Designer's Notes for Grayson.
 
 ### Final lesson phrase
 
 > Josric Pickle, your students await the final lesson.
+
+
+## v1.5 table-use additions
+
+- Named books in Room 2
+- Bullet-list reinforced-door narration
+- Librarian appearance and 2024 RAW action guidance
+- Teamwork-room DCs and object AC/HP
+- Initiative-tracker entry for standing mirrors
+- Recovery station explained through Cure Wounds/Lesser Restoration
+- Martial/Magic/Support Reflection staging for the final exam
+- Explicitly no breakable-mirror shortcut in the final exam
