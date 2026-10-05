@@ -36,3 +36,5 @@ jobs:
             git commit -m "Add v1.4 5eTools adventure JSON"
             git push
           fi
+
+# Triggered to publish the prepared v1.4 payload.
