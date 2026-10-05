@@ -1,4 +1,4 @@
-name: Install approved maps
+name: Install approved JPTC maps
 
 on:
   push:
@@ -13,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Decode approved maps and update 5eTools
+      - name: Install approved maps and update 5eTools references
         run: |
           python <<'PY'
           import base64
+          import json
+          import time
           from pathlib import Path
 
           names = [
@@ -29,29 +31,59 @@ jobs:
               'mirror_gallery',
               'final_room',
           ]
-          Path('maps').mkdir(exist_ok=True)
+
+          image_dir = Path('img/adventure/JPTC')
+          image_dir.mkdir(parents=True, exist_ok=True)
           for name in names:
               b64 = Path(f'.approved-map-upload/{name}.b64').read_text(encoding='utf-8').strip()
-              Path(f'maps/{name}.jpg').write_bytes(base64.b64decode(b64))
+              (image_dir / f'{name}.jpg').write_bytes(base64.b64decode(b64))
 
-          p = Path('Josric_Pickle_Practical_Course_for_Adventurers_5etools.json')
-          text = p.read_text(encoding='utf-8')
-          for name in names:
-              text = text.replace(f'/maps/{name}.svg', f'/maps/{name}.jpg')
-          p.write_text(text, encoding='utf-8')
+          json_path = Path('Josric_Pickle_Practical_Course_for_Adventurers_5etools.json')
+          data = json.loads(json_path.read_text(encoding='utf-8'))
+          data['_meta']['dateLastModified'] = int(time.time())
 
-          r = Path('README.md')
-          rt = r.read_text(encoding='utf-8')
-          note = '\n\n## Approved map set\n\nThe 5eTools JSON references the approved raster map set in `maps/*.jpg`; the earlier SVG recreations are no longer used.\n'
-          if '## Approved map set' not in rt:
-              rt += note
-          r.write_text(rt, encoding='utf-8')
+          filename_by_title = {
+              'Base Library Room': 'base_library_room.jpg',
+              'Book Mimic Room': 'book_mimic_room.jpg',
+              'Book Puzzle Room': 'book_puzzle_room.jpg',
+              'Reinforced Door Room': 'reinforced_door_room.jpg',
+              'Librarian Room': 'librarian_room.jpg',
+              'Teamwork Room': 'teamwork_room.jpg',
+              'Mirror Gallery': 'mirror_gallery.jpg',
+              'Final Room': 'final_room.jpg',
+          }
+
+          def walk(obj):
+              if isinstance(obj, dict):
+                  if obj.get('type') == 'image' and obj.get('title') in filename_by_title:
+                      obj['href'] = {
+                          'type': 'internal',
+                          'path': f"adventure/JPTC/{filename_by_title[obj['title']]}"
+                      }
+                  for value in obj.values():
+                      walk(value)
+              elif isinstance(obj, list):
+                  for value in obj:
+                      walk(value)
+
+          walk(data)
+          json_path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+
+          readme_path = Path('README.md')
+          readme = readme_path.read_text(encoding='utf-8')
+          marker = '## Approved map set'
+          if marker in readme:
+              readme = readme.split(marker)[0].rstrip()
+          readme += '''\n\n## Approved map set\n\nThe adventure uses the approved raster map set packaged in `img/adventure/JPTC/`, following the same internal-image pattern used by No Cause for Alarm. The 5eTools JSON references these as internal paths such as `adventure/JPTC/book_mimic_room.jpg`. The earlier SVG recreations are no longer used.\n'''
+          readme_path.write_text(readme, encoding='utf-8')
           PY
-          rm -f maps/*.svg
+
+          rm -rf maps
           rm -rf .approved-map-upload
           rm -f .github/workflows/install-approved-maps.yml
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Use approved map set in 5eTools"
+          git commit -m "Package approved maps like NCFA"
           git push
