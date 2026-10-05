@@ -23,7 +23,7 @@ The JSON references the maps in this repository through raw GitHub URLs, so the 
 
 ## Current version
 
-**v1.5**
+**v1.6**
 
 This version includes the corrected lesson-marker phrase, optional Librarian and Teamwork pacing rooms, initiative-ready Mirror Echoes and Josric Reflections, Josric's 2024 Mage-based final encounter, exact table-terrain setup notes, expanded Josric appearance/voice guidance, and the first-person Designer's Notes for Grayson.
 
@@ -42,3 +42,16 @@ This version includes the corrected lesson-marker phrase, optional Librarian and
 - Recovery station explained through Cure Wounds/Lesser Restoration
 - Martial/Magic/Support Reflection staging for the final exam
 - Explicitly no breakable-mirror shortcut in the final exam
+
+
+## v1.6 refinements
+
+- Room 2 now uses Eye → Head → Hand clue cards on the DM screen with title-only book choices
+- Correct Room 2 choices place the matching symbols on the exit door; wrong choices reset the sequence
+- The ordinary handle in Room 3 is mixed into the door description rather than saved for the final detail
+- The Librarian opens with “State your authorization.”
+- Mirror Echoes visibly emerge from their source mirrors, making the discovered relationship legible
+- Final Reflections split directly from Josric and have no standing-mirror shortcut
+- Josric clearly states the final objective: “Final lesson. Defeat me.”
+- Recovery keeps its RAW spell explanation but adds faster table-running guidance
+- Designer’s Notes for Grayson now explain how to choose optional rooms based on both the clock and the table’s current energy
