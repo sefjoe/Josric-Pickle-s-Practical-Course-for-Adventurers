@@ -4,8 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/build-5etools-json.yml'
-  issues:
-    types: [opened]
+      - '.build/**'
   workflow_dispatch:
 
 permissions:
@@ -13,7 +12,6 @@ permissions:
 
 jobs:
   build:
-    if: github.event_name != 'issues' || github.event.issue.title == 'Build v1.4 JSON'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -22,6 +20,8 @@ jobs:
       - name: Rebuild adventure JSON
         shell: bash
         run: |
+          test -f .build/payload.gz.b64.01
+          test -f .build/payload.gz.b64.02
           cat .build/payload.gz.b64.* | base64 --decode | gzip --decompress > Josric_Pickle_Practical_Course_for_Adventurers_5etools.json
           python -m json.tool Josric_Pickle_Practical_Course_for_Adventurers_5etools.json > /dev/null
           rm -rf .build
@@ -36,5 +36,3 @@ jobs:
             git commit -m "Add v1.4 5eTools adventure JSON"
             git push
           fi
-
-# Triggered to publish the prepared v1.4 payload.
