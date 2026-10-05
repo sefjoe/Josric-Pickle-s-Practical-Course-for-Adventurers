@@ -1,0 +1,45 @@
+name: Install approved maps
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install approved map JPGs from repository blobs
+        run: |
+          python <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('Josric_Pickle_Practical_Course_for_Adventurers_5etools.json')
+          text = p.read_text(encoding='utf-8')
+          text = text.replace('/maps/base_library_room.svg', '/maps/base_library_room.jpg')
+          text = text.replace('/maps/book_mimic_room.svg', '/maps/book_mimic_room.jpg')
+          text = text.replace('/maps/book_puzzle_room.svg', '/maps/book_puzzle_room.jpg')
+          text = text.replace('/maps/reinforced_door_room.svg', '/maps/reinforced_door_room.jpg')
+          text = text.replace('/maps/librarian_room.svg', '/maps/librarian_room.jpg')
+          text = text.replace('/maps/teamwork_room.svg', '/maps/teamwork_room.jpg')
+          text = text.replace('/maps/mirror_gallery.svg', '/maps/mirror_gallery.jpg')
+          text = text.replace('/maps/final_room.svg', '/maps/final_room.jpg')
+          p.write_text(text, encoding='utf-8')
+
+          r = Path('README.md')
+          rt = r.read_text(encoding='utf-8')
+          note = '\n\n## Approved map set\n\nThe 5eTools JSON now references the approved raster map set in `maps/*.jpg`; the earlier SVG recreations are no longer used.\n'
+          if '## Approved map set' not in rt:
+              rt += note
+          r.write_text(rt, encoding='utf-8')
+          PY
+          rm -f maps/*.svg
+          git config user.name "sefjoe"
+          git config user.email "109435369+sefjoe@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Use approved map set in 5eTools"
+          git push
