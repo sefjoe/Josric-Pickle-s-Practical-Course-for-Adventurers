@@ -23,7 +23,7 @@ The JSON references the maps in this repository through raw GitHub URLs, so the 
 
 ## Current version
 
-**v1.6**
+**v1.7**
 
 This version includes the corrected lesson-marker phrase, optional Librarian and Teamwork pacing rooms, initiative-ready Mirror Echoes and Josric Reflections, Josric's 2024 Mage-based final encounter, exact table-terrain setup notes, expanded Josric appearance/voice guidance, and the first-person Designer's Notes for Grayson.
 
@@ -55,3 +55,11 @@ This version includes the corrected lesson-marker phrase, optional Librarian and
 - Josric clearly states the final objective: “Final lesson. Defeat me.”
 - Recovery keeps its RAW spell explanation but adds faster table-running guidance
 - Designer’s Notes for Grayson now explain how to choose optional rooms based on both the clock and the table’s current energy
+
+
+## v1.7 approved map fix
+
+All eight approved raster maps are stored in `img/adventure/JPTC/` and linked with direct raw GitHub image URLs. Each image is registered as a native 5etools map with its dimensions and a unique ID. Import the JSON using its raw URL, or update the existing homebrew entry; no local image-folder installation is required. The v1.6 adventure text is preserved.
+
+Import URL:
+https://raw.githubusercontent.com/sefjoe/Josric-Pickle-s-Practical-Course-for-Adventurers/main/Josric_Pickle_Practical_Course_for_Adventurers_5etools.json
