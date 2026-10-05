@@ -63,3 +63,8 @@ All eight approved raster maps are stored in `img/adventure/JPTC/` and linked wi
 
 Import URL:
 https://raw.githubusercontent.com/sefjoe/Josric-Pickle-s-Practical-Course-for-Adventurers/main/Josric_Pickle_Practical_Course_for_Adventurers_5etools.json
+
+
+## Approved map set
+
+The adventure uses the approved raster map set packaged in `img/adventure/JPTC/`, following the same internal-image pattern used by No Cause for Alarm. The 5eTools JSON references these as internal paths such as `adventure/JPTC/book_mimic_room.jpg`. The earlier SVG recreations are no longer used.
