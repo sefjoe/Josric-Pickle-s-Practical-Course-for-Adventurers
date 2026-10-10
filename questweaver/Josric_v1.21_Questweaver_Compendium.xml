@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <!-- Josric Pickle v1.21 custom monster conversion. Adventure scenes are NOT encoded in this compendium. -->
+  <monster>
+    <name>Book Mimic</name>
+    <size>T</size>
+    <type>monstrosity (shapechanger)</type>
+    <alignment>Unaligned</alignment>
+    <ac>11</ac>
+    <hp>10 (2d4 + 2)</hp>
+    <speed>10 ft., climb 10 ft.</speed>
+    <str>1</str>
+    <dex>12</dex>
+    <con>13</con>
+    <int>10</int>
+    <wis>13</wis>
+    <cha>10</cha>
+    <skill>Stealth +3</skill>
+    <immune>acid</immune>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <passive>11</passive>
+    <languages>Common, Undercommon, telepathy 120 ft.</languages>
+    <cr>0</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>Use the published Juvenile Mimic as the base creature. This course version uses maximum hit points and adds the normal Mimic&apos;s Adhesive behavior.</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>While motionless in object form, the mimic is indistinguishable from an ordinary book.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The mimic can climb difficult surfaces, including ceilings, without making an ability check.</text>
+    </trait>
+    <trait>
+      <name>Adhesive</name>
+      <text>The mimic adheres to a creature that touches it. A Huge or smaller creature adhered to the mimic is grappled (escape DC 13), and ability checks made to escape this grapple have disadvantage.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 1d4 acid damage.</text>
+      <attack>Bite|+3|1d4</attack>
+    </action>
+    <action>
+      <name>Shape-Shift</name>
+      <text>The mimic changes between its amorphous form and a Tiny book-shaped object. Its statistics do not change.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Barbarian</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Reckless Strike</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d8 + 1 slashing damage. The echo can make this attack with advantage; if it does, attack rolls against it have advantage until the start of its next turn.</text>
+      <attack>Reckless Strike|+3|1d8+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Bard</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Priest Acolyte role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Mocking Verse</name>
+      <text>One creature the echo can see within 60 feet must succeed on a DC 12 Wisdom saving throw or take 2d6 psychic damage.</text>
+    </action>
+    <action>
+      <name>Bonus Action — Inspiration (1/Encounter)</name>
+      <text>The echo chooses another echo within 30 feet. That echo adds 1d4 to its next attack roll before the start of this echo&apos;s next turn.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Cleric</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Priest Acolyte role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Radiant Flame</name>
+      <text>Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 2d6 radiant damage.</text>
+      <attack>Radiant Flame|+4|2d6</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Healing Word (1/Encounter)</name>
+      <text>One echo within 30 feet regains 5 hit points.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Druid</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Vine Lash</name>
+      <text>Ranged Spell Attack: +4 to hit, range 30 ft., one target. Hit: 2d6 piercing damage, and the echo can pull the target 5 feet toward itself.</text>
+      <attack>Vine Lash|+4|2d6</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Wild Shape (1/Encounter)</name>
+      <text>The echo takes on an animalistic appearance and gains 5 temporary hit points. No other statistics change.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Fighter</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>16</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Weapon</name>
+      <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 80/320 ft., one target. Hit: 1d6 + 1 damage of a type appropriate to the reflected character&apos;s weapon.</text>
+      <attack>Weapon|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Action Surge (1/Encounter)</name>
+      <text>Immediately after taking the Attack action, the echo makes one additional Weapon attack.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Monk</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>10 (10)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Goblin Warrior role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1d6 + 2 bludgeoning damage.</text>
+      <attack>Unarmed Strike|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Flurry (1/Encounter)</name>
+      <text>The echo makes one additional Unarmed Strike.</text>
+    </action>
+    <action>
+      <name>Bonus Action — Disengage</name>
+      <text>The echo takes the Disengage action.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Paladin</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>16</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>12</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Weapon</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d6 + 1 slashing damage. Once per encounter after hitting, the echo deals an extra 1d4 radiant damage.</text>
+      <attack>Weapon|+3|1d6+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Ranger</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>16 (16)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Scout role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 1d8 + 2 piercing damage.</text>
+      <attack>Longbow|+4|1d8+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Mark Prey (1/Encounter)</name>
+      <text>The echo marks one creature it can see within 90 feet. The next time the echo hits that creature, the hit deals an extra 1d4 damage.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Rogue</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>10 (10)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Goblin Warrior role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Blade or Bow</name>
+      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 80/320 ft., one target. Hit: 1d6 + 2 piercing damage, plus 1d4 damage if the attack roll had advantage.</text>
+      <attack>Blade or Bow|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Cunning Movement</name>
+      <text>The echo takes the Hide or Disengage action.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Sorcerer</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>13 (13)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Arcane Burst</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Burst|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Quickened Burst (1/Encounter)</name>
+      <text>The echo makes one additional Arcane Burst.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Warlock</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>13 (13)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Eldritch Burst</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage. Once per encounter after hitting, the echo deals an extra 1d4 necrotic damage.</text>
+      <attack>Eldritch Burst|+4|1d10+2</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Wizard</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>13 (13)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <trait>
+      <name>Arcane Shield (1/Encounter)</name>
+      <text>When an attack would hit the echo, it can use its reaction to gain +3 AC against that attack, potentially causing it to miss.</text>
+    </trait>
+    <action>
+      <name>Arcane Burst</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Burst|+4|1d10+2</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Artificer</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>13 (13)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Arcane Tool</name>
+      <text>Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Tool|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Protective Infusion (1/Encounter)</name>
+      <text>The echo or another echo within 30 feet gains +2 AC until the start of this echo&apos;s next turn.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Blood Hunter</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Rite Weapon</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d6 + 1 slashing damage. Before the attack, the echo can lose 1 hit point; if the attack hits, it deals an extra 1d4 necrotic damage.</text>
+      <attack>Rite Weapon|+3|1d6+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Brute</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Heavy Attack</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d8 + 1 damage. Once per encounter, add 1d4 damage to a hit.</text>
+      <attack>Heavy Attack|+3|1d8+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Skirmisher</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>10 (10)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Goblin Warrior role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Quick Attack</name>
+      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 80/320 ft., one target. Hit: 1d6 + 2 damage.</text>
+      <attack>Quick Attack|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Slip Away</name>
+      <text>The echo takes the Disengage action.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Caster</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>13 (13)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <trait>
+      <name>Burst (1/Encounter)</name>
+      <text>Each creature in a 10-foot-radius sphere centered on a point the echo can see within 60 feet makes a DC 12 Dexterity saving throw, taking 2d6 force damage on a failure or half as much on a success.</text>
+    </trait>
+    <action>
+      <name>Arcane Shot</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Shot|+4|1d10+2</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Mirror Support</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>11 (11)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>12</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Echo is an initiative-ready reskin/tweak built from the published Priest Acolyte role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Reflected Form</name>
+      <text>The echo looks exactly like the character it reflects, including apparent gear and species. Species traits are cosmetic only.</text>
+    </trait>
+    <trait>
+      <name>Linked Mirror</name>
+      <text>If the standing mirror linked to this echo is destroyed, the echo immediately shatters and is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The echo does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Support Bolt</name>
+      <text>Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 1d6 + 2 force damage.</text>
+      <attack>Support Bolt|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Aid Ally (1/Encounter)</name>
+      <text>One other echo within 30 feet regains 5 hit points.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Arcane Librarian</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>45 (6d8 + 18)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>18</int>
+    <wis>16</wis>
+    <cha>14</cha>
+    <save>Int +6, Wis +5</save>
+    <skill>Arcana +6, History +6, Insight +5, Investigation +6, Perception +5</skill>
+    <immune>acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <passive>15</passive>
+    <languages>Common, Draconic, Elvish, understands any written language contained in Josric&apos;s library</languages>
+    <cr>0</cr>
+    <trait>
+      <name>Library Authorization</name>
+      <text>The Librarian recognizes genuine written or magical authorization from Josric Pickle. Presenting valid authorization satisfies her demand automatically; no ability check is required.</text>
+    </trait>
+    <trait>
+      <name>Indestructible Custodian</name>
+      <text>The Librarian is immune to all damage. Attacks and damaging effects are still resolved normally. An attack can hit her Armor Class, but any damage dealt to her is reduced to 0.</text>
+    </trait>
+    <trait>
+      <name>Constructed Purpose</name>
+      <text>The Librarian doesn&apos;t require air, food, drink, or sleep.</text>
+    </trait>
+    <action>
+      <name>Search</name>
+      <text>The Librarian takes the Search action, using Wisdom (Perception) or Wisdom (Insight) as appropriate.</text>
+    </action>
+    <action>
+      <name>Examine Credentials</name>
+      <text>The Librarian examines one document, insignia, magical mark, or other claimed proof of authorization she can see within 5 feet. She recognizes genuine authorization from Josric automatically. A forgery or misleading document can be contested by the Librarian&apos;s Intelligence (Investigation) or Wisdom (Insight), as appropriate.</text>
+    </action>
+    <action>
+      <name>Mage Hand</name>
+      <text>The Librarian casts mage hand without material components. She normally uses it to retrieve books, accept paperwork, return misplaced objects, or point toward something a visitor should stop touching.</text>
+    </action>
+    <action>
+      <name>Prestidigitation</name>
+      <text>The Librarian casts prestidigitation without material components. She normally uses it to clean surfaces, extinguish unattended flames, mark misplaced books, or produce small signs of disapproval.</text>
+    </action>
+    <action>
+      <name>Utilize</name>
+      <text>The Librarian takes the Utilize action to operate a library mechanism, open or close an authorized door, retrieve a record, or manipulate another appropriate object.</text>
+    </action>
+    <action>
+      <name>Bonus Action — Return to Shelf</name>
+      <text>One unattended book or similar Tiny object the Librarian can see within 30 feet magically moves up to 20 feet toward its proper location. This ability can&apos;t move an object being worn or carried by an unwilling creature.</text>
+    </action>
+    <reaction>
+      <name>Protect the Collection</name>
+      <text>When a creature the Librarian can see within 30 feet makes an attack against a book, shelf, desk, manuscript, or other library property, the Librarian grants that object a +5 bonus to AC against the triggering attack.</text>
+    </reaction>
+  </monster>
+  <monster>
+    <name>Josric Pickle</name>
+    <size>M</size>
+    <type>humanoid (wizard)</type>
+    <alignment>N</alignment>
+    <ac>15</ac>
+    <hp>144 (18d8)</hp>
+    <speed>30 ft.</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>17</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save>Int +6, Wis +4</save>
+    <skill>Arcana +6, History +6, Perception +4</skill>
+    <passive>14</passive>
+    <languages>Common, plus three languages</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>Josric uses the published 2024 Mage as his defensive chassis, with maximum hit points and the course-specific offensive limits below.</text>
+    </trait>
+    <trait>
+      <name>Training Course Master</name>
+      <text>Josric is testing the adventurers, not attempting to kill them. He does not use the Mage&apos;s dangerous area-damage options in this encounter.</text>
+    </trait>
+    <trait>
+      <name>Split Fire</name>
+      <text>When more than one conscious target is available, Josric normally directs his two Arcane Bursts at different targets.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Josric makes two Arcane Burst attacks.</text>
+    </action>
+    <action>
+      <name>Arcane Burst</name>
+      <text>Attack: +6 to hit, reach 5 ft. or range 120 ft., one target. Hit: 3d8 + 3 force damage.</text>
+      <attack>Arcane Burst|+6|3d8+3</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Misty Step (3/Day)</name>
+      <text>Josric uses the published Mage&apos;s Misty Step bonus action.</text>
+    </action>
+    <reaction>
+      <name>Protective Magic (3/Day)</name>
+      <text>Josric uses the published Mage&apos;s Protective Magic to produce shield or counterspell, as appropriate to the trigger.</text>
+    </reaction>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Barbarian</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Reckless Strike</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d8 + 1 slashing damage. The reflection can make this attack with advantage; if it does, attack rolls against it have advantage until the start of its next turn.</text>
+      <attack>Reckless Strike|+3|1d8+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Bard</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Priest Acolyte role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a support Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Mocking Verse</name>
+      <text>One creature the reflection can see within 60 feet must succeed on a DC 12 Wisdom saving throw or take 2d6 psychic damage.</text>
+    </action>
+    <action>
+      <name>Bonus Action — Inspiration (1/Encounter)</name>
+      <text>The reflection chooses another reflection within 30 feet. That reflection adds 1d4 to its next attack roll before the start of this reflection&apos;s next turn.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Cleric</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Priest Acolyte role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a support Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Radiant Flame</name>
+      <text>Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 2d6 radiant damage.</text>
+      <attack>Radiant Flame|+4|2d6</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Healing Word (1/Encounter)</name>
+      <text>One reflection within 30 feet regains 5 hit points.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Druid</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a magic Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Vine Lash</name>
+      <text>Ranged Spell Attack: +4 to hit, range 30 ft., one target. Hit: 2d6 piercing damage, and the reflection can pull the target 5 feet toward itself.</text>
+      <attack>Vine Lash|+4|2d6</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Wild Shape (1/Encounter)</name>
+      <text>The reflection takes on an animalistic appearance and gains 5 temporary hit points. No other statistics change.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Fighter</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>16</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Weapon</name>
+      <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 80/320 ft., one target. Hit: 1d6 + 1 damage of a type appropriate to the reflected character&apos;s weapon.</text>
+      <attack>Weapon|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Action Surge (1/Encounter)</name>
+      <text>Immediately after taking the Attack action, the reflection makes one additional Weapon attack.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Monk</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>16 (16)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Goblin Warrior role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1d6 + 2 bludgeoning damage.</text>
+      <attack>Unarmed Strike|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Flurry (1/Encounter)</name>
+      <text>The reflection makes one additional Unarmed Strike.</text>
+    </action>
+    <action>
+      <name>Bonus Action — Disengage</name>
+      <text>The reflection takes the Disengage action.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Paladin</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>16</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>12</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Weapon</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d6 + 1 slashing damage. Once per encounter after hitting, the reflection deals an extra 1d4 radiant damage.</text>
+      <attack>Weapon|+3|1d6+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Ranger</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>22 (22)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Scout role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 1d8 + 2 piercing damage.</text>
+      <attack>Longbow|+4|1d8+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Mark Prey (1/Encounter)</name>
+      <text>The reflection marks one creature it can see within 90 feet. The next time the reflection hits that creature, the hit deals an extra 1d4 damage.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Rogue</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>16 (16)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Goblin Warrior role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Blade or Bow</name>
+      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 80/320 ft., one target. Hit: 1d6 + 2 piercing damage, plus 1d4 damage if the attack roll had advantage.</text>
+      <attack>Blade or Bow|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Cunning Movement</name>
+      <text>The reflection takes the Hide or Disengage action.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Sorcerer</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>19 (19)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a magic Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Arcane Burst</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Burst|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Quickened Burst (1/Encounter)</name>
+      <text>The reflection makes one additional Arcane Burst.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Warlock</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>19 (19)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a magic Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Eldritch Burst</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage. Once per encounter after hitting, the reflection deals an extra 1d4 necrotic damage.</text>
+      <attack>Eldritch Burst|+4|1d10+2</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Wizard</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>19 (19)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a magic Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <trait>
+      <name>Arcane Shield (1/Encounter)</name>
+      <text>When an attack would hit the reflection, it can use its reaction to gain +3 AC against that attack, potentially causing it to miss.</text>
+    </trait>
+    <action>
+      <name>Arcane Burst</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Burst|+4|1d10+2</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Artificer</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>19 (19)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a magic Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Arcane Tool</name>
+      <text>Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Tool|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Protective Infusion (1/Encounter)</name>
+      <text>The reflection or another reflection within 30 feet gains +2 AC until the start of this reflection&apos;s next turn.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Blood Hunter</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Rite Weapon</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d6 + 1 slashing damage. Before the attack, the reflection can lose 1 hit point; if the attack hits, it deals an extra 1d4 necrotic damage.</text>
+      <attack>Rite Weapon|+3|1d6+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Brute</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>14</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Guard role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Heavy Attack</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1d8 + 1 damage. Once per encounter, add 1d4 damage to a hit.</text>
+      <attack>Heavy Attack|+3|1d8+1</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Skirmisher</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>16 (16)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Goblin Warrior role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a martial Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Quick Attack</name>
+      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 80/320 ft., one target. Hit: 1d6 + 2 damage.</text>
+      <attack>Quick Attack|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Slip Away</name>
+      <text>The reflection takes the Disengage action.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Caster</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>19 (19)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>14</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Mage Apprentice role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a magic Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <trait>
+      <name>Burst (1/Encounter)</name>
+      <text>Each creature in a 10-foot-radius sphere centered on a point the reflection can see within 60 feet makes a DC 12 Dexterity saving throw, taking 2d6 force damage on a failure or half as much on a success.</text>
+    </trait>
+    <action>
+      <name>Arcane Shot</name>
+      <text>Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 1d10 + 2 force damage.</text>
+      <attack>Arcane Shot|+4|1d10+2</attack>
+    </action>
+  </monster>
+  <monster>
+    <name>Josric Reflection — Support</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>13</ac>
+    <hp>17 (17)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>12</cha>
+    <senses>darkvision 60 ft.</senses>
+    <passive>10</passive>
+    <languages>understands the languages of the creature it reflects but can&apos;t speak</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Published Chassis</name>
+      <text>This Reflection is an initiative-ready reskin/tweak built from the published Priest Acolyte role chassis rather than a copied player character sheet.</text>
+    </trait>
+    <trait>
+      <name>Final Exam Projection</name>
+      <text>This is a support Reflection created directly by Josric Pickle. It uses the complete final-fight statistics printed here, including its increased hit points. It is not linked to a physical mirror, and destroying a mirror cannot harm it.</text>
+    </trait>
+    <trait>
+      <name>Training Restraint</name>
+      <text>The reflection does not attack an unconscious creature.</text>
+    </trait>
+    <action>
+      <name>Support Bolt</name>
+      <text>Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 1d6 + 2 force damage.</text>
+      <attack>Support Bolt|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Bonus Action — Aid Ally (1/Encounter)</name>
+      <text>One other reflection within 30 feet regains 5 hit points.</text>
+    </action>
+  </monster>
+  <monster>
+    <name>Standing Mirror (Echo Source)</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>11</ac>
+    <hp>10 (10)</hp>
+    <speed>0 ft.</speed>
+    <str>10</str>
+    <dex>1</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>1</wis>
+    <cha>1</cha>
+    <vulnerable>bludgeoning</vulnerable>
+    <immune>poison, psychic</immune>
+    <trait>
+      <name>Object, Not a Creature</name>
+      <text>This initiative entry is only a damage tracker. For rules purposes the mirror is an object, not a creature. Effects that target only creatures do not affect it.</text>
+    </trait>
+    <trait>
+      <name>Linked Echo</name>
+      <text>When this mirror is destroyed, its linked Mirror Echo is destroyed immediately.</text>
+    </trait>
+  </monster>
+</compendium>
